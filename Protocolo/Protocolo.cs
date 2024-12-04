@@ -2,6 +2,7 @@
 
 namespace Protocolo
 {
+    //comentario
     public class Pedido
     {
         public string Comando { get; set; }
