@@ -37,12 +37,12 @@ namespace Protocolo
         }
     }
     // Código nuevo
-    public class Protocolo
+    public class Protocolos
     {
         public Pedido Pedido { get; set; }
         public Respuesta Respuesta { get; set; }
 
-        public Protocolo(string mensajePedido, string mensajeRespuesta)
+        public Protocolos(string mensajePedido, string mensajeRespuesta)
         {
             Pedido = Pedido.Procesar(mensajePedido);
             Respuesta = new Respuesta
@@ -52,7 +52,7 @@ namespace Protocolo
             };
         }
 
-        public Protocolo(Pedido pedido)
+        public Protocolos(Pedido pedido)
         {
             Pedido = pedido;
         }
